@@ -14,13 +14,13 @@ Born from Atom's original internal configuration manager and the settings manage
 ### Install
 
 ```
-npm install electron-settings
+npm install electron-settings-yaml
 ```
 
 ### Demo
 
 ```ts
-import settings from 'electron-settings';
+import settings from 'electron-settings-yaml';
 
 await settings.set('color', {
   name: 'cerulean',
@@ -37,7 +37,7 @@ await settings.get('color.code.rgb[1]');
 // => 179
 ```
 
-⚠ For Electron v10+, if you want to use electron-settings within a browser window, be sure to set the `enableRemoteModule` web preference to `true`. Otherwise you might get the error `Cannot read property 'app' of undefined`. See [#133](https://github.com/nathanbuchar/electron-settings/issues/133) for more info.
+⚠ For Electron v10+, if you want to use electron-settings-yaml within a browser window, be sure to set the `enableRemoteModule` web preference to `true`. Otherwise you might get the error `Cannot read property 'app' of undefined`. See [#133](https://github.com/nathanbuchar/electron-settings/issues/133) for more info.
 
 ```js
 new BrowserWindow({
@@ -49,7 +49,7 @@ new BrowserWindow({
 
 ### API Docs
 
-API docs and can be found at [electron-settings.js.org](https://electron-settings.js.org).
+API docs and can be found at [electron-settings-yaml.js.org](https://electron-settings-yaml.js.org).
 
 
 
